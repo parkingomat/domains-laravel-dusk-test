@@ -2,9 +2,13 @@
 
 namespace Tests;
 
-use Illuminate\Foundation\Testing\TestCase as BaseTestCase;
+use Laravel\BrowserKitTesting\TestCase as BaseTestCase;
+use Laravel\Dusk\Browser;
 
 abstract class TestCase extends BaseTestCase
 {
     use CreatesApplication;
+
+    public $baseUrl = 'http://localhost';
+
 }
